@@ -1,0 +1,108 @@
+{
+	"variables": [],
+	"info": {
+		"name": "samurai",
+		"_postman_id": "31b85dfb-b5c3-666b-ff1d-ee099fb54328",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create samurai with no entrance",
+			"request": {
+				"url": "localhost:5000/api/Samurai/Create",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "samuraiName",
+							"value": "JulieSan",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Samurai with entrance",
+			"request": {
+				"url": "localhost:5000/api/Samurai/CreateWithEntrance",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "samuraiName",
+							"value": "SampsonSan",
+							"type": "text",
+							"description": "(string) Samurai name"
+						},
+						{
+							"key": "movieMinute",
+							"value": "2",
+							"type": "text",
+							"description": "(int) minute in movie where this occurs"
+						},
+						{
+							"key": "scene",
+							"value": "S2",
+							"description": "(string) scene name",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "A drooly entrance!",
+							"description": "(string) entrance description",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List samurais with quotes and entrances",
+			"request": {
+				"url": "localhost:5000/api/Samurai",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "AddQuoteToSamurai",
+			"request": {
+				"url": "localhost:5000/api/Samurai/AddQuote",
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "samuraiId",
+							"value": "1",
+							"description": "(int) value of samurai to add quote to",
+							"type": "text"
+						},
+						{
+							"key": "quoteText",
+							"value": "Time to sharpen my sword",
+							"description": "string",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
