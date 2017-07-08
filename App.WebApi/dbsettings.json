@@ -1,0 +1,7 @@
+{
+  "Data": {
+    "DefaultConnection": {
+       "ConnectionString": "Server=localhost;Database=Samurai;User_ID=sa;Password=Passw0rd;MultipleActiveResultSets=true;Connect Timeout=30;"
+    }
+  }
+}
